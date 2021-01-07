@@ -127,12 +127,6 @@ noremap <C-x> "+d
 " paste in insert mode
 inoremap <C-v> <Esc>"+pa
 
-" shift the movement keys by 1 to the right
-noremap j h
-noremap k j
-noremap l k
-noremap č l
-
 " mapping ESC to ć
 nnoremap ć <Esc>
 nnoremap Ć <Esc>
@@ -199,7 +193,7 @@ let g:palenight_terminal_italics=1
 set autoindent
 set smartindent
 set shiftwidth=4
-set tabstop=4
+set tabstop=2
 set smarttab
 set expandtab
 
@@ -441,7 +435,7 @@ let g:clang_format#command = 'clang-format-3.8'
 let g:clang_format#style_options = {
             \ "BreakBeforeBraces" : "Attach",
             \ "UseTab" : "Never",
-            \ "IndentWidth" : 4,
+            \ "IndentWidth" : 2,
             \ "ColumnLimit" : 100,
             \ "AccessModifierOffset" : -4,
             \ "AllowShortIfStatementsOnASingleLine" : "false",
